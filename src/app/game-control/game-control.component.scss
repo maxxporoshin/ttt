@@ -1,0 +1,12 @@
+.game-control {
+  .game-control__start {
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  .game-control__row {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}

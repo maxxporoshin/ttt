@@ -1,0 +1,13 @@
+<div class="game-control">
+  <div class="game-control__row">
+    <label>N: </label>
+    <input class="game-control__n" type="number" [(ngModel)]="n">
+  </div>
+  <div class="game-control__row">
+    <label>Tiles in a row to win: </label>
+    <input class="game-control__tiles" type="number" [(ngModel)]="tilesInARow">
+  </div>
+  <div class="game-control__row">
+    <button class="game-control__start" (click)="onStartClick()">Start new game</button>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+.game {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .game__game-control {
+    position: absolute;
+    right: 0;
+    padding-right: 25px;
+  }
+
+  .game__info {
+    position: absolute;
+    left: 0;
+    padding-left: 25px;
+  }
+
+
+  .game__heading {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .game__gratz {
+    font-size: 40px;
+  }
+
+  .game__turn {
+    font-size: 20px;
+  }
+}

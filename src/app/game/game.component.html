@@ -1,0 +1,9 @@
+<div class="game">
+  <div class="game__heading">
+    <div class="game__gratz" *ngIf="gameFinished">Player {{currentPlayer}} wins!</div>
+    <div class="game__turn" *ngIf="!gameFinished">It's {{currentPlayer}} player's turn</div>
+  </div>
+  <app-info class="game__info" [n]="n" [tilesInARow]="tilesInARow"></app-info>
+  <app-board class="game__board"[n]="n" [board]="board" (makeTurn)="onMakeTurn($event)"></app-board>
+  <app-game-control class="game__game-control" [n]="n" [tilesInARow]="tilesInARow" (startNewGame)="onStartNewGame($event)"></app-game-control>
+</div>
